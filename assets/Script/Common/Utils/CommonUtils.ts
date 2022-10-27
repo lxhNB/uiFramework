@@ -57,6 +57,7 @@ export class CommonUtils {
         return Math.floor(Math.random() * (max - min + 0.9999) + min);
     }
 
+    /**查找  元素在数组中的位置 */
     public static indexOf<T>(val:T, arr:T[]) : number {
         for(let i = 0; i < arr.length; i++) {
             if(arr[i] == val) {
@@ -65,7 +66,7 @@ export class CommonUtils {
         }
         return -1;
     }
-
+    /**数组是否存在一个数组相同的一串数据 */
     public static indexOfArr<T>(arr:T[], ...values:T[]) : number {
         let paramCount = values.length;
         let found = false;
@@ -83,7 +84,8 @@ export class CommonUtils {
         }
         return -1;
     }
-
+    
+    /**两者之差的误差 是否超过 允许的误差  */
     public static floatEqual(left:number, right:number, epsilon:number = 0.000001) : boolean {
         return Math.abs(left - right) < epsilon;
     }
@@ -583,6 +585,19 @@ export class CommonUtils {
             tween.start();
         }
         return tween;
+    }
+
+
+    /*****************************************字符串************************** */
+    /**反转字符串 */
+    public static strReserve(str:string)
+    {
+        //
+        let list = str.split("")
+        let list2 = list.reverse()
+        let str3 = list2.join("")//参数为指定的分隔符，默认会使用逗号
+        console.log('分割',list,list2,str3)
+        return list2;
     }
 
     

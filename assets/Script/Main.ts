@@ -1,4 +1,6 @@
-import UINavigator from "./UIScript/UINavigator";
+import { CommonUtils } from "./Common/Utils/CommonUtils";
+// import UIMeshTexture from "./UIScript/UIMeshTexture";
+// import UINavigator from "./UIScript/UINavigator";
 
 const {ccclass, property} = cc._decorator;
 
@@ -6,11 +8,13 @@ const {ccclass, property} = cc._decorator;
 export default class Main extends cc.Component {
     
     onLoad() {
+        CommonUtils.strReserve("1234")
         
     }
 
     start () {
-        UINavigator.open();
+        // UINavigator.open();
+        // UIMeshTexture.open()
     }
     
     onDestroy() {
