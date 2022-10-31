@@ -2,6 +2,9 @@ import Game from "../Logic/Game";
 import AdapterMgr, { AdapterType } from "../UIFrame/AdapterMgr";
 import { EventCenter } from "../UIFrame/EventCenter";
 import { EventType } from "../UIFrame/EventType";
+import SceneMgr from "../UIFrame/SceneMgr";
+import { IFormConfig, IFormData } from "../UIFrame/Struct";
+import UIManager from "../UIFrame/UIManager";
 
 const {ccclass, property} = cc._decorator;
 
@@ -34,8 +37,15 @@ export default class Scene extends cc.Component {
         // 第二步 初始化游戏（Managers，Configs，SDKs）
         await Game.init(this.node);
         // 第三步 构建初始场景（加载必要的prefab，音频，texture）
+        // await UIManager.getInstance().loadForm()
 
         // 第四步 加载主界面UI,关掉loading页面,正式进入游戏
+        let IFormData:IFormConfig = {
+            prefabUrl:"Forms/Screen/UINavigator",
+            type:"",
+        }
+
+        SceneMgr.open(IFormData);
 
     }
     /** 初始化事件 */

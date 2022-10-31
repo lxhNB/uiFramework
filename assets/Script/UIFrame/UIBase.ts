@@ -20,6 +20,7 @@ export default class UIBase extends cc.Component {
     public view: cc.Component = null;
 
     public static open(param?: any, formData?: IFormData) {
+        console.log('this',this,this['UIConfig'])
         let uiconfig = this['UIConfig'];
         if(!uiconfig) {
             cc.warn(`sorry UIConfig is null, please check UIConfig`);

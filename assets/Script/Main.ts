@@ -14,6 +14,8 @@ export default class Main extends cc.Component {
 
     start () {
         UINavigator.open();
+        // UserModel
+        // mainPackage
         // UIMeshTexture.open()
     }
     

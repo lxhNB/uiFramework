@@ -6,7 +6,7 @@ import UIManager from "./UIManager";
 
 class WindowMgr {
     // 窗体
-    private _showingList: PriorityStack<string> = new PriorityStack();
+    private _showingList: PriorityStack<string> = new PriorityStack();  //
     private _waitingList: PriorityQueue<WindowData> = new PriorityQueue();
     
     private _currWindow: string = "";
