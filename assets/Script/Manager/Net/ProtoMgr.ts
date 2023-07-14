@@ -77,6 +77,7 @@ export default class ProtoMgr extends cc.Component {
     //压包
     decodeMsg(sType,cType)
     {
+        //先将需要传输的对象数据， 序列化
         let msgBuff:Uint8Array = this.serializeMsg("UserModel",{"cyUserno":"12","cyPassWord":"22","cyStatus":"33"})
         if(!msgBuff) return;
         //注入长度  自定义  stype 服务器号2字节  和 ctype 客户端2字节 ，预留四个字节
