@@ -97,6 +97,7 @@ export default class ProtoMgr extends cc.Component {
         //从第八个位置开始
         uIntBuff.set(msgBuff,8);
 
+        
         //最后调用websocket发送buf
         // send（buf）
         console.log('压包数据',buf)
