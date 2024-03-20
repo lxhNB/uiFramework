@@ -9,7 +9,24 @@
   "packable": true,
   "width": 166,
   "height": 72,
-  "platformSettings": {},
+  "platformSettings": {
+    "android": {
+      "formats": [
+        {
+          "name": "etc1",
+          "quality": "slow"
+        }
+      ]
+    },
+    "ios": {
+      "formats": [
+        {
+          "name": "etc2",
+          "quality": "slow"
+        }
+      ]
+    }
+  },
   "subMetas": {
     "about_down": {
       "ver": "1.0.4",

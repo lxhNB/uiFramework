@@ -9,7 +9,24 @@
   "packable": true,
   "width": 464,
   "height": 655,
-  "platformSettings": {},
+  "platformSettings": {
+    "android": {
+      "formats": [
+        {
+          "name": "etc1",
+          "quality": "slow"
+        }
+      ]
+    },
+    "ios": {
+      "formats": [
+        {
+          "name": "etc2",
+          "quality": "slow"
+        }
+      ]
+    }
+  },
   "subMetas": {
     "r_door": {
       "ver": "1.0.4",

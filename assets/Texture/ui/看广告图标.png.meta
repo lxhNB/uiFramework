@@ -9,7 +9,24 @@
   "packable": true,
   "width": 42,
   "height": 45,
-  "platformSettings": {},
+  "platformSettings": {
+    "android": {
+      "formats": [
+        {
+          "name": "etc1",
+          "quality": "slow"
+        }
+      ]
+    },
+    "ios": {
+      "formats": [
+        {
+          "name": "etc2",
+          "quality": "slow"
+        }
+      ]
+    }
+  },
   "subMetas": {
     "看广告图标": {
       "ver": "1.0.4",
