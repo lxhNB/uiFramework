@@ -1,5 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+// https://forum.cocos.org/t/topic/106919    cocos论坛
+// https://www.chuyouxiang.com/archives/760  工具链接
 
 const _etcSettings = {
     "android": {
