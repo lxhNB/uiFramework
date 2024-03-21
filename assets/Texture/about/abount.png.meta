@@ -14,17 +14,12 @@
       "formats": [
         {
           "name": "etc1",
-          "quality": "slow"
+          "quality": "fast"
         }
       ]
     },
     "ios": {
-      "formats": [
-        {
-          "name": "etc2",
-          "quality": "slow"
-        }
-      ]
+      "formats": []
     }
   },
   "subMetas": {
